@@ -1,0 +1,20 @@
+{
+  "_note": "Downloads to ignore (testing before public launch). The stats show GitHub's count minus these. Recorded 2026-11-11.",
+  "adm-v1.0.0": {
+    "ADM-1.0.0-mac-arm64.dmg": 4,
+    "ADM-1.0.0-mac-x64.dmg": 2,
+    "ADM-1.0.0-mac-arm64.zip": 2,
+    "ADM-1.0.0-mac-x64.zip": 2,
+    "ADM-1.0.0-win-x64.exe": 5,
+    "ADM-1.0.0-win-arm64.exe": 2,
+    "ADM-1.0.0-win.exe": 2,
+    "ADM-1.0.0-win-x64.zip": 2,
+    "ADM-1.0.0-win-arm64.zip": 2,
+    "ADM-1.0.0-linux-x86_64.AppImage": 7,
+    "ADM-1.0.0-linux-arm64.AppImage": 2,
+    "ADM-1.0.0-linux-amd64.deb": 3,
+    "ADM-1.0.0-linux-arm64.deb": 2,
+    "ADM-1.0.0-linux-x64.tar.gz": 2,
+    "ADM-1.0.0-linux-arm64.tar.gz": 1
+  }
+}

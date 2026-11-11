@@ -16,8 +16,25 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 PREFIX = "adm-v"  # ADM's release tags in this shared repo: adm-v1.0.0
 README = "README.md"
 STATS = "stats/adm.json"
+# Downloads to leave out (e.g. testing before launch), per release tag and file name.
+# GitHub's counts can't be reset, so the stats show each count minus its baseline.
+BASELINE = "stats/adm-baseline.json"
 START, END = "<!-- adm-stats:start -->", "<!-- adm-stats:end -->"
 OSES = ("macOS", "Windows", "Linux")
+
+
+def load_baseline():
+    try:
+        with open(BASELINE) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+
+def counted(baseline, tag, asset):
+    """The asset's download count, minus any baseline recorded for it."""
+    ignore = baseline.get(tag, {}).get(asset["name"], 0)
+    return max(0, asset["download_count"] - ignore)
 
 
 def api(path):
@@ -59,6 +76,7 @@ def main():
         print("No ADM releases found")
         return
 
+    baseline = load_baseline()
     latest = max(adm, key=lambda r: version_key(r["tag_name"][len(PREFIX):]))
     version = latest["tag_name"][len(PREFIX):]
 
@@ -67,7 +85,7 @@ def main():
     files = {}
     by_os = dict.fromkeys(OSES, 0)
     for asset in latest["assets"]:
-        name, count = asset["name"], asset["download_count"]
+        name, count = asset["name"], counted(baseline, latest["tag_name"], asset)
         key = re.sub(rf"^ADM-{re.escape(version)}-", "", name)
         files[key] = count
         if os_of(name):
@@ -78,7 +96,7 @@ def main():
     for release in adm:
         for asset in release["assets"]:
             if os_of(asset["name"]):
-                all_time[os_of(asset["name"])] += asset["download_count"]
+                all_time[os_of(asset["name"])] += counted(baseline, release["tag_name"], asset)
 
     now = datetime.datetime.now(datetime.timezone.utc)
     stats = {
@@ -106,7 +124,8 @@ def main():
     total = f"| **Total** | **{stats['total']:,}** |"
     rows.append(total + (f" **{stats['allTime']['total']:,}** |" if len(adm) > 1 else ""))
     table = "\n".join(rows)
-    block = f"{START}\n{table}\n\n<sub>Updated daily from GitHub's download counts · last update {stats['updated']}</sub>\n{END}"
+    since = " · counting since 2026-11-11" if baseline else ""
+    block = f"{START}\n{table}\n\n<sub>Updated daily from GitHub's download counts{since} · last update {stats['updated']}</sub>\n{END}"
 
     with open(README) as f:
         readme = f.read()
