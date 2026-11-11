@@ -189,7 +189,7 @@
 | 🐧 Linux | 17 |
 | **Total** | **40** |
 
-<sub>Updated daily from GitHub's download counts · last update 2026-11-11 09:52 UTC</sub>
+<sub>Updated daily from GitHub's download counts · last update 2026-11-11 09:55 UTC</sub>
 <!-- adm-stats:end -->
 
 ### Installing
