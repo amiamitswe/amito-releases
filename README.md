@@ -44,7 +44,7 @@
   <img src="https://img.shields.io/badge/version-1.0.0-5458F0" alt="Version 1.0.0" />
   <img src="https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-34D3B6" alt="macOS, Windows, Linux" />
   <img src="https://img.shields.io/badge/price-free-FFC857" alt="Free" />
-  <img src="https://img.shields.io/github/downloads/amiamitswe/amito-releases/adm-v1.0.0/total?label=downloads&color=3B3FD8" alt="Downloads" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.total&label=downloads&color=3B3FD8&style=flat&cacheSeconds=3600" alt="Downloads" />
 </p>
 
 <p align="center">
@@ -145,8 +145,8 @@
 
 | Mac | Installer | Archive |
 |---|---|---|
-| Apple Silicon (M1 and later) | [ADM-1.0.0-mac-arm64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.dmg) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.zip) |
-| Intel | [ADM-1.0.0-mac-x64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.dmg) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.zip) |
+| Apple Silicon (M1 and later) | [ADM-1.0.0-mac-arm64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.dmg)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27mac-arm64.dmg%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.zip)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27mac-arm64.zip%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
+| Intel | [ADM-1.0.0-mac-x64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.dmg)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27mac-x64.dmg%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.zip)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27mac-x64.zip%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
 
 <sub>Not sure which Mac you have? Apple menu → About This Mac. "Chip: Apple M…" means Apple Silicon.</sub>
 
@@ -158,9 +158,9 @@
 
 | PC | Installer | Portable |
 |---|---|---|
-| x64 (most PCs) | [ADM-1.0.0-win-x64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.exe) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.zip) |
-| ARM64 (Snapdragon) | [ADM-1.0.0-win-arm64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.exe) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.zip) |
-| Not sure | [ADM-1.0.0-win.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win.exe) (both, larger download) | |
+| x64 (most PCs) | [ADM-1.0.0-win-x64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.exe)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27win-x64.exe%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.zip)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27win-x64.zip%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
+| ARM64 (Snapdragon) | [ADM-1.0.0-win-arm64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.exe)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27win-arm64.exe%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.zip)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27win-arm64.zip%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
+| Not sure | [ADM-1.0.0-win.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win.exe)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27win.exe%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> (both, larger download) | |
 
 </details>
 
@@ -170,12 +170,27 @@
 
 | CPU | AppImage (any distro) | .deb (Debian, Ubuntu) | Archive |
 |---|---|---|---|
-| x64 | [ADM-1.0.0-linux-x86_64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x86_64.AppImage) | [ADM-1.0.0-linux-amd64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-amd64.deb) | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x64.tar.gz) |
-| ARM64 | [ADM-1.0.0-linux-arm64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.AppImage) | [ADM-1.0.0-linux-arm64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.deb) | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.tar.gz) |
+| x64 | [ADM-1.0.0-linux-x86_64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x86_64.AppImage)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-x86_64.AppImage%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [ADM-1.0.0-linux-amd64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-amd64.deb)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-amd64.deb%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x64.tar.gz)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-x64.tar.gz%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
+| ARM64 | [ADM-1.0.0-linux-arm64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.AppImage)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-arm64.AppImage%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [ADM-1.0.0-linux-arm64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.deb)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-arm64.deb%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.tar.gz)<br/><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Famiamitswe%2Famito-releases%2Fmain%2Fstats%2Fadm.json&query=%24.files%5B%27linux-arm64.tar.gz%27%5D&label=downloads&color=5458F0&style=flat-square&cacheSeconds=3600" alt="downloads" /> |
 
 </details>
 
 <sub>Older versions: <a href="https://github.com/amiamitswe/amito-releases/releases?q=adm-v">all ADM releases</a></sub>
+
+<a id="adm-download-stats"></a>
+
+### Download stats
+
+<!-- adm-stats:start -->
+| ADM 1.0.0 | Downloads |
+|---|---:|
+| 🍎 macOS | 10 |
+| 🪟 Windows | 13 |
+| 🐧 Linux | 17 |
+| **Total** | **40** |
+
+<sub>Updated daily from GitHub's download counts · last update 2026-11-11 09:52 UTC</sub>
+<!-- adm-stats:end -->
 
 ### Installing
 

@@ -1,0 +1,44 @@
+# Updates ADM's download counts: stats/adm.json (used by the badges in README.md) and the
+# downloads table in README.md. Runs daily, when a release is published, when this
+# workflow or the script changes, and on demand from the Actions tab ("Run workflow").
+name: Download stats
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # every day at 03:00 UTC
+  release:
+    types: [published]
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/download-stats.yml
+      - scripts/download_stats.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: download-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Collect download counts
+        run: python3 scripts/download_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if anything changed
+        run: |
+          git add stats/adm.json README.md
+          if git diff --cached --quiet; then
+            echo "Counts unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update ADM download stats"
+          git push
