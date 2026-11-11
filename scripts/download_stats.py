@@ -108,6 +108,19 @@ def main():
         "allTime": {**all_time, "total": sum(all_time.values())},
         "releases": len(adm),
     }
+
+    # Leave everything untouched when no count changed, so the workflow makes no commit
+    # and "last change" keeps showing when the numbers last moved.
+    try:
+        with open(STATS) as f:
+            previous = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        previous = {}
+    without_time = lambda d: {k: v for k, v in d.items() if k != "updated"}
+    if without_time(previous) == without_time(stats):
+        print(f"Counts unchanged since {previous.get('updated')}; nothing to update")
+        return
+
     os.makedirs(os.path.dirname(STATS), exist_ok=True)
     with open(STATS, "w") as f:
         json.dump(stats, f, indent=2)
@@ -125,7 +138,7 @@ def main():
     rows.append(total + (f" **{stats['allTime']['total']:,}** |" if len(adm) > 1 else ""))
     table = "\n".join(rows)
     since = " · counting since 2026-11-11" if baseline else ""
-    block = f"{START}\n{table}\n\n<sub>Updated daily from GitHub's download counts{since} · last update {stats['updated']}</sub>\n{END}"
+    block = f"{START}\n{table}\n\n<sub>Updated daily from GitHub's download counts{since} · last change {stats['updated']}</sub>\n{END}"
 
     with open(README) as f:
         readme = f.read()

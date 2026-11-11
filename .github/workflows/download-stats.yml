@@ -1,6 +1,7 @@
 # Updates ADM's download counts: stats/adm.json (used by the badges in README.md) and the
 # downloads table in README.md. Runs daily, when a release is published, when this
 # workflow or the script changes, and on demand from the Actions tab ("Run workflow").
+# It commits only when a download count changed.
 name: Download stats
 
 on:
