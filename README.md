@@ -1,77 +1,232 @@
-# Amito Releases
+<p align="center">
+  <img src="assets/banner.svg" alt="Amito Releases: official downloads for Amito apps" width="100%" />
+</p>
 
-Official downloads for apps by **Amito**. This repository holds installers only; the source code is kept private.
+<p align="center">
+  Official downloads for apps by <b>Amito</b>. This repository holds installers only; the source code is private.<br/>
+  Every installer is built automatically by GitHub Actions and published here as a GitHub Release.
+</p>
 
-Every installer is built automatically by GitHub Actions and published here as a GitHub Release.
+<br/>
 
-| App | Latest version | Platforms |
-|---|---|---|
-| [ADM, Amito Download Manager](#adm-amito-download-manager) | 1.0.0 | macOS, Windows, Linux |
+## Apps
+
+<table>
+  <tr>
+    <td width="96" align="center"><img src="assets/adm/icon.svg" alt="ADM icon" width="72" /></td>
+    <td>
+      <b><a href="#adm-amito-download-manager">ADM, Amito Download Manager</a></b><br/>
+      Fast, multi-threaded downloads with live thread lanes and a built-in speed test.<br/>
+      <sub>Version 1.0.0 &nbsp;·&nbsp; macOS, Windows, Linux &nbsp;·&nbsp; Free</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 ---
 
-## ADM, Amito Download Manager
+<a id="adm-amito-download-manager"></a>
 
-A fast, multi-threaded download manager. ADM splits every file across up to 32 threads, shows exactly what each thread is doing, and tells you to the second when a download will finish. It also has a built-in internet speed test. Free.
+<p align="center">
+  <img src="assets/adm/icon.svg" alt="ADM logo" width="112" />
+</p>
 
-**Highlights**
+<h2 align="center">ADM, Amito Download Manager</h2>
 
-- Multi-threaded downloads, up to 32 threads per file
-- Pause, resume across restarts, and automatic retries
-- Live thread lanes and speed chart
-- Category folders, batch adding, and clipboard link detection
-- Global speed limit and checksum verification
-- Internet speed test with server choice
-- Six themes plus custom colours
+<p align="center">
+  <b>Download faster. See every thread.</b><br/>
+  ADM splits every file across up to 32 threads, shows exactly what each one is doing,<br/>
+  and tells you to the second when it will finish. Plus a built-in internet speed test.
+</p>
 
-### Download ADM 1.0.0
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-5458F0" alt="Version 1.0.0" />
+  <img src="https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-34D3B6" alt="macOS, Windows, Linux" />
+  <img src="https://img.shields.io/badge/price-free-FFC857" alt="Free" />
+  <img src="https://img.shields.io/github/downloads/amiamitswe/amito-releases/adm-v1.0.0/total?label=downloads&color=3B3FD8" alt="Downloads" />
+</p>
 
-**macOS** (macOS 12 Monterey or later)
+<p align="center">
+  <a href="https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-Apple_Silicon-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS (Apple Silicon)" /></a>
+  <a href="https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.exe"><img src="https://img.shields.io/badge/Download_for_Windows-x64-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows (x64)" /></a>
+  <a href="https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x86_64.AppImage"><img src="https://img.shields.io/badge/Download_for_Linux-AppImage-E95420?style=for-the-badge&logo=linux&logoColor=white" alt="Download for Linux (AppImage)" /></a>
+</p>
+
+<p align="center"><sub>Intel Mac, Windows ARM, .deb and other files are listed under <a href="#all-adm-downloads">All downloads</a>.</sub></p>
+
+<br/>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/adm/main-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/adm/main-light.png" />
+    <img src="assets/adm/main-dark.png" alt="ADM downloading a file over many threads, with a live speed chart and thread lanes" width="100%" />
+  </picture>
+</p>
+
+### Highlights
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      ⚡ <b>Up to 32 threads per file</b><br/>
+      <sub>Every file is split into parts that download at the same time.</sub>
+    </td>
+    <td width="50%" valign="top">
+      🧵 <b>Live thread lanes</b><br/>
+      <sub>See what each thread is doing, with a real-time speed chart.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      ⏯️ <b>Pause and resume, even after restarts</b><br/>
+      <sub>Progress is saved per thread, with automatic retries.</sub>
+    </td>
+    <td valign="top">
+      📋 <b>Grab links instantly</b><br/>
+      <sub>Copy a link and ADM offers to download it. Add many at once.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      🗂️ <b>Tidy folders</b><br/>
+      <sub>Files are sorted into category folders automatically.</sub>
+    </td>
+    <td valign="top">
+      🛡️ <b>Safe by default</b><br/>
+      <sub>Checksum verification, no overwrites, disk-space checks.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      📶 <b>Internet speed test</b><br/>
+      <sub>Download, upload, ping and jitter, with your choice of server.</sub>
+    </td>
+    <td valign="top">
+      🎨 <b>Six themes plus your own colours</b><br/>
+      <sub>Light, dark and more, with a global speed limit too.</sub>
+    </td>
+  </tr>
+</table>
+
+### Screenshots
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/adm/speed-test.png" alt="ADM internet speed test" /><br/>
+      <sub>Built-in internet speed test</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/adm/settings-themes.png" alt="ADM theme settings" /><br/>
+      <sub>Six themes, including your own colours</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/adm/main-light.png" alt="ADM in the light theme" /><br/>
+      <sub>Light theme</sub>
+    </td>
+    <td align="center">
+      <img src="assets/adm/main-dark.png" alt="ADM in the dark theme" /><br/>
+      <sub>Dark theme</sub>
+    </td>
+  </tr>
+</table>
+
+<a id="all-adm-downloads"></a>
+
+### All downloads
+
+<details open>
+<summary><b>🍎 macOS</b> &nbsp;<sub>macOS 12 Monterey or later</sub></summary>
+<br/>
 
 | Mac | Installer | Archive |
 |---|---|---|
 | Apple Silicon (M1 and later) | [ADM-1.0.0-mac-arm64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.dmg) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-arm64.zip) |
 | Intel | [ADM-1.0.0-mac-x64.dmg](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.dmg) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-mac-x64.zip) |
 
-**Windows** (Windows 10 or 11)
+<sub>Not sure which Mac you have? Apple menu → About This Mac. "Chip: Apple M…" means Apple Silicon.</sub>
+
+</details>
+
+<details open>
+<summary><b>🪟 Windows</b> &nbsp;<sub>Windows 10 or 11</sub></summary>
+<br/>
 
 | PC | Installer | Portable |
 |---|---|---|
 | x64 (most PCs) | [ADM-1.0.0-win-x64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.exe) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-x64.zip) |
 | ARM64 (Snapdragon) | [ADM-1.0.0-win-arm64.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.exe) | [.zip](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win-arm64.zip) |
-| Not sure | [ADM-1.0.0-win.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win.exe) (both, larger) | |
+| Not sure | [ADM-1.0.0-win.exe](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-win.exe) (both, larger download) | |
 
-**Linux** (Ubuntu 20.04, Debian 11, Fedora 36 or newer)
+</details>
 
-| CPU | AppImage (any distro) | .deb (Debian, Ubuntu) | .tar.gz |
+<details open>
+<summary><b>🐧 Linux</b> &nbsp;<sub>Ubuntu 20.04, Debian 11, Fedora 36 or newer</sub></summary>
+<br/>
+
+| CPU | AppImage (any distro) | .deb (Debian, Ubuntu) | Archive |
 |---|---|---|---|
 | x64 | [ADM-1.0.0-linux-x86_64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x86_64.AppImage) | [ADM-1.0.0-linux-amd64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-amd64.deb) | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-x64.tar.gz) |
 | ARM64 | [ADM-1.0.0-linux-arm64.AppImage](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.AppImage) | [ADM-1.0.0-linux-arm64.deb](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.deb) | [.tar.gz](https://github.com/amiamitswe/amito-releases/releases/download/adm-v1.0.0/ADM-1.0.0-linux-arm64.tar.gz) |
 
-Older versions: [all ADM releases](https://github.com/amiamitswe/amito-releases/releases?q=adm-v)
+</details>
+
+<sub>Older versions: <a href="https://github.com/amiamitswe/amito-releases/releases?q=adm-v">all ADM releases</a></sub>
 
 ### Installing
 
-The current builds are not code-signed yet, so your system may warn you the first time you open ADM.
+> [!NOTE]
+> The current builds are not code-signed yet, so your system may warn you the first time you open ADM. This is expected.
 
-- **macOS:** open the `.dmg` and drag ADM into Applications. The first time, right-click ADM and choose **Open**, then **Open** again.
-- **Windows:** run the `.exe`. If SmartScreen appears, click **More info**, then **Run anyway**.
-- **Linux AppImage:** make it executable, then run it:
-  ```bash
-  chmod +x ADM-1.0.0-linux-x86_64.AppImage
-  ./ADM-1.0.0-linux-x86_64.AppImage
-  ```
-- **Linux .deb:**
-  ```bash
-  sudo apt install ./ADM-1.0.0-linux-amd64.deb
-  ```
+<details>
+<summary><b>macOS</b></summary>
+<br/>
+
+1. Open the `.dmg` and drag **ADM** into **Applications**.
+2. The first time, right-click ADM and choose **Open**, then click **Open** again.
+
+</details>
+
+<details>
+<summary><b>Windows</b></summary>
+<br/>
+
+1. Run the `.exe` installer.
+2. If SmartScreen appears, click **More info**, then **Run anyway**.
+
+</details>
+
+<details>
+<summary><b>Linux</b></summary>
+<br/>
+
+**AppImage:** make it executable, then run it.
+
+```bash
+chmod +x ADM-1.0.0-linux-x86_64.AppImage
+./ADM-1.0.0-linux-x86_64.AppImage
+```
+
+**.deb:**
+
+```bash
+sudo apt install ./ADM-1.0.0-linux-amd64.deb
+```
+
+</details>
 
 ### Verify your download
 
-Each file's SHA-256 checksum is listed next to it on the release page. To check a file:
+Each file's SHA-256 checksum is shown next to it on the [release page](https://github.com/amiamitswe/amito-releases/releases?q=adm-v). To check a file you downloaded:
 
-- **macOS / Linux:** `shasum -a 256 <file>`
-- **Windows (PowerShell):** `Get-FileHash <file>`
+| System | Command |
+|---|---|
+| macOS / Linux | `shasum -a 256 <file>` |
+| Windows (PowerShell) | `Get-FileHash <file>` |
 
 ### Report a problem
 
@@ -79,4 +234,6 @@ Found a bug or have an idea? [Open an issue](https://github.com/amiamitswe/amito
 
 ---
 
-© 2026 Amit Samadder. All rights reserved.
+<p align="center">
+  <sub>© 2026 Amit Samadder. All rights reserved.</sub>
+</p>
