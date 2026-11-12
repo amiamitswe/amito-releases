@@ -1,34 +1,34 @@
 {
   "version": "1.0.0",
-  "updated": "2026-11-11 10:05 UTC",
+  "updated": "2026-11-12 10:43 UTC",
   "files": {
     "linux-amd64.deb": 0,
     "linux-arm64.AppImage": 0,
     "linux-arm64.deb": 0,
-    "linux-arm64.tar.gz": 0,
+    "linux-arm64.tar.gz": 1,
     "linux-x64.tar.gz": 0,
     "linux-x86_64.AppImage": 0,
-    "mac-arm64.dmg": 0,
+    "mac-arm64.dmg": 1,
     "mac-arm64.zip": 0,
     "mac-x64.dmg": 0,
     "mac-x64.zip": 0,
     "win-arm64.exe": 0,
     "win-arm64.zip": 0,
-    "win-x64.exe": 0,
+    "win-x64.exe": 1,
     "win-x64.zip": 0,
     "win.exe": 0
   },
   "os": {
-    "macOS": 0,
-    "Windows": 0,
-    "Linux": 0
+    "macOS": 1,
+    "Windows": 1,
+    "Linux": 1
   },
-  "total": 0,
+  "total": 3,
   "allTime": {
-    "macOS": 0,
-    "Windows": 0,
-    "Linux": 0,
-    "total": 0
+    "macOS": 1,
+    "Windows": 1,
+    "Linux": 1,
+    "total": 3
   },
   "releases": 1
 }

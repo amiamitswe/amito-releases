@@ -184,12 +184,12 @@
 <!-- adm-stats:start -->
 | ADM 1.0.0 | Downloads |
 |---|---:|
-| 🍎 macOS | 0 |
-| 🪟 Windows | 0 |
-| 🐧 Linux | 0 |
-| **Total** | **0** |
+| 🍎 macOS | 1 |
+| 🪟 Windows | 1 |
+| 🐧 Linux | 1 |
+| **Total** | **3** |
 
-<sub>Updated daily from GitHub's download counts · counting since 2026-11-11 · last change 2026-11-11 10:05 UTC</sub>
+<sub>Updated daily from GitHub's download counts · counting since 2026-11-11 · last change 2026-11-12 10:43 UTC</sub>
 <!-- adm-stats:end -->
 
 ### Installing
