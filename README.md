@@ -186,10 +186,10 @@
 |---|---:|
 | 🍎 macOS | 4 |
 | 🪟 Windows | 3 |
-| 🐧 Linux | 1 |
-| **Total** | **8** |
+| 🐧 Linux | 4 |
+| **Total** | **11** |
 
-<sub>Updated daily from GitHub's download counts · counting since 2026-11-11 · last change 2026-11-13 10:38 UTC</sub>
+<sub>Updated daily from GitHub's download counts · counting since 2026-11-11 · last change 2026-11-14 09:51 UTC</sub>
 <!-- adm-stats:end -->
 
 ### Installing
